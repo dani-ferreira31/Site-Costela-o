@@ -74,7 +74,7 @@ function NebulaCloud({ position, color, scale }: {
   useFrame((state) => {
     if (!meshRef.current) return
     const t = state.clock.getElapsedTime()
-    meshRef.current.material.opacity = 0.04 + Math.sin(t * 0.3) * 0.02
+    ;(meshRef.current.material as THREE.Material).opacity = 0.04 + Math.sin(t * 0.3) * 0.02
   })
 
   return (

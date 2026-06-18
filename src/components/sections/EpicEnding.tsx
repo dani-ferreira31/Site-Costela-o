@@ -52,7 +52,7 @@ export function EpicEnding({ onOpenDiary }: EpicEndingProps) {
     return () => ctx.revert()
   }, [])
 
-  const containerVariants = {
+  const containerVariants: any = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -60,7 +60,7 @@ export function EpicEnding({ onOpenDiary }: EpicEndingProps) {
     },
   }
 
-  const itemVariants = {
+  const itemVariants: any = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' } },
   }

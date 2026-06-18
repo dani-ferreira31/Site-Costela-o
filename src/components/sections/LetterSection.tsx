@@ -18,6 +18,7 @@ export function LetterSection() {
   const paragraphRefs = useRef<(HTMLParagraphElement | null)[]>([])
 
   useEffect(() => {
+    const itemVariants: any = {}
     const section = sectionRef.current
     const letter = letterRef.current
     if (!section || !letter) return
