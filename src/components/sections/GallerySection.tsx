@@ -26,7 +26,7 @@ function FloatingPhoto({
       initial={{ opacity: 0, scale: 0.8, y: 20 }}
       whileInView={{ opacity: 1, scale: 1, y: 0 }}
       viewport={{ once: true, margin: '-50px' }}
-      transition={{ duration: 0.7, delay, ease: [0.23, 1, 0.32, 1] }}
+      transition={{ duration: 0.7, delay, ease: 'easeOut' }}
       animate={{ y: [0, -yRange, 0] }}
       whileHover={{ scale: 1.06, zIndex: 10 }}
       style={{

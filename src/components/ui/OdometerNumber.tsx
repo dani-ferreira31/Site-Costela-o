@@ -47,7 +47,7 @@ export function OdometerNumber({ value, digits = 3, label }: OdometerNumberProps
                 initial={{ y: -40, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: 40, opacity: 0 }}
-                transition={{ duration: 0.35, ease: [0.23, 1, 0.32, 1] }}
+                transition={{ duration: 0.35, ease: 'easeOut' }}
                 className="font-accent text-3xl md:text-4xl font-bold gradient-text absolute"
               >
                 {digit}

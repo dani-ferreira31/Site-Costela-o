@@ -33,7 +33,7 @@ function DiaryCard({
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-40px' }}
-      transition={{ duration: 0.6, delay: index * 0.08, ease: [0.23, 1, 0.32, 1] }}
+      transition={{ duration: 0.6, delay: index * 0.08, ease: 'easeOut' }}
     >
       <GlassCard gold className="overflow-hidden group relative">
         {/* Author badge */}
